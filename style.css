@@ -52,6 +52,22 @@ ul li {
   margin: 12px 0;
   font-size: 20px;
 }
+ul button {
+  color: white;
+  background-color: #007bff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 30px;
+}
+ul button:hover {
+  background-color: #0056b3;
+}
+ul button:active {
+  background-color: #004085;
+}
 form {
   max-width: 650px;
   margin: 24px auto;
