@@ -34,4 +34,9 @@ if (taskList) {
 }
 
 //deleting a task
+function deleteTask(index) {
+  tasks.splice(index, 1);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  location.reload();
+}
 
