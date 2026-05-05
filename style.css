@@ -1,9 +1,18 @@
+body {
+  color: rgb(180, 95, 95);
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f6f9; */
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 header {
   background-color: #4caf50;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 24px 0;
   text-align: center;
+  width: 100%;
 }
 header h1 {
   font-size: 50px;

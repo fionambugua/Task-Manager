@@ -40,3 +40,15 @@ function deleteTask(index) {
   location.reload();
 }
 
+//displaying the total tasks available
+const total = document.getElementById("totalTasks");
+
+if (total) {
+  document.getElementById("totalTasks").textContent = tasks.length;
+
+  let completed = tasks.filter((t) => t.completed).length;
+  document.getElementById("completedTasks").textContent = completed;
+
+  document.getElementById("pendingTasks").textContent =
+    tasks.length - completed;
+}
