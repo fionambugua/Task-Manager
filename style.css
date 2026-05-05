@@ -44,6 +44,14 @@ section {
   padding: 24px;
   transition: box-shadow 0.3s ease;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 12px 0;
+  font-size: 20px;
+}
 form {
   max-width: 650px;
   margin: 24px auto;
