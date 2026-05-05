@@ -18,4 +18,20 @@ if (form) {
   });
 }
 
-//displaying
+//displaying an added task
+const taskList = document.getElementById("taskList");
+if (taskList) {
+  tasks.forEach((task, index) => {
+    let li = document.createElement("li");
+    li.innerHTML = `
+        <strong>${task.title}</strong><br>
+        ${task.description}<br>
+        <button onclick="deleteTask(${index})">Delete</button>
+    `;
+
+    taskList.appendChild(li);
+  });
+}
+
+//deleting a task
+
