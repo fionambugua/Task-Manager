@@ -72,6 +72,7 @@ ul button:active {
 }
 li {
   background-color: rgb(250, 231, 205);
+  border: solid black 1px;
 }
 form {
   max-width: 650px;
