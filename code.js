@@ -34,14 +34,14 @@ if (taskList) {   //checkd for list
 }
 
 //deleting a task
-function deleteTask(index) {
-  tasks.splice(index, 1);
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-  location.reload();
+function deleteTask(index) {  //index of task to remove
+  tasks.splice(index, 1); //removes one index in the arry
+  localStorage.setItem("tasks", JSON.stringify(tasks)); //the storage is then updated
+  location.reload(); //list in dislpayed is then updated
 }
 
 //displaying the total tasks available
-const total = document.getElementById("totalTasks");
+const total = document.getElementById("totalTasks"); 
 
 if (total) {
   document.getElementById("totalTasks").textContent = tasks.length;
