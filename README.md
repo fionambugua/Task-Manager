@@ -3,7 +3,7 @@
 The Task Manager is designed to help users organize their daily activities efficiently. Many individuals struggle with keeping track of tasks, leading to missed deadlines and reduced productivity. It provides a simple and user-friendly interface where users can add, view, and manage tasks. The system improves productivity by helping users stay organized and focused.
 
 ## Project Link
-- URL: 
+- URL: https://fionambugua.github.io/Task-Manager/
 
 ## How It Works
 1. The user navigates to the Add Task page and enters a task title and description.
