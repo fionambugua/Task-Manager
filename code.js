@@ -20,16 +20,16 @@ if (form) {     //looks for html with form
 
 //displaying an added task
 const taskList = document.getElementById("taskList");
-if (taskList) {
-  tasks.forEach((task, index) => {
-    let li = document.createElement("li");
+if (taskList) {   //checkd for list
+  tasks.forEach((task, index) => {  //goes through task and its index
+    let li = document.createElement("li"); //creates a task list
     li.innerHTML = `
         <strong>${task.title}</strong><br>
         ${task.description}<br>
         <button onclick="deleteTask(${index})">Delete</button>
     `;
 
-    taskList.appendChild(li);
+    taskList.appendChild(li); //adds li to ul
   });
 }
 
