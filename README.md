@@ -9,9 +9,9 @@ Github : https://github.com/fionambugua
 
 ## Setup Instructions
 
-## Prerequisites
-A modern web browser (Chrome, Firefox, Safari, or Edge)
-A text editor (optional, for viewing/editing the code)
+# Prerequisites
+ - A modern web browser (Chrome, Firefox, Safari, or Edge)
+ - A text editor (optional, for viewing/editing the code)
 ## BDD(Behavior-Driven Development)
 
 ## TECHNOLOGIES USED

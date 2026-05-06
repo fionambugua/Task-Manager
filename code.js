@@ -1,20 +1,20 @@
 //adding a new task
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+let tasks = JSON.parse(localStorage.getItem("tasks")) || []; //gets stored tasks and stores them in an array
 
-const form = document.getElementById("taskForm");
+const form = document.getElementById("taskForm"); //looks for form
 
-if (form) {
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+if (form) {     //looks for html with form
+  form.addEventListener("submit", function (e) {   //eventListener that listens to submit task
+    e.preventDefault(); //prevents page from refreshing after submission
 
-    let title = document.getElementById("title").value;
-    let description = document.getElementById("description").value;
+    let title = document.getElementById("title").value; //gets value of title input
+    let description = document.getElementById("description").value;  //gets value of description input
 
-    let task = { title: title, description: description, completed: false };
+    let task = { title: title, description: description, completed: false }; //task object that stores details
     tasks.push(task);
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks)); //saves to localStorage
 
-    window.location.href = "about.html";
+    window.location.href = "about.html"; //after submission takes you to the task list page
   });
 }
 
