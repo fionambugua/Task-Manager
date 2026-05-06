@@ -44,7 +44,7 @@ function deleteTask(index) {  //index of task to remove
 const total = document.getElementById("totalTasks"); 
 
 if (total) {
-  document.getElementById("totalTasks").textContent = tasks.length;
+  document.getElementById("totalTasks").textContent = tasks.length; //Counts all tasks
 
   let completed = tasks.filter((t) => t.completed).length;
   document.getElementById("completedTasks").textContent = completed;
