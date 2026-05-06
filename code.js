@@ -3,11 +3,11 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || []; //gets stored tasks
 
 const form = document.getElementById("taskForm"); //looks for form
 
-if (form) {     //looks for html with form
+if (form) {
+  //looks for html with form
   form.addEventListener("submit", function (e) {
     //eventListener that listens to submit task
     e.preventDefault(); //prevents page from refreshing after submission
-
 
     let title = document.getElementById("title").value.trim(); //gets value of title input
     let description = document.getElementById("description").value.trim(); //gets value of description input
@@ -38,8 +38,10 @@ if (form) {     //looks for html with form
 
 //displaying an added task
 const taskList = document.getElementById("taskList");
-if (taskList) {   //checkd for list
-  tasks.forEach((task, index) => {  //goes through task and its index
+if (taskList) {
+  //checkd for list
+  tasks.forEach((task, index) => {
+    //goes through task and its index
     let li = document.createElement("li"); //creates a task list
     li.innerHTML = `
         <strong>${task.title}</strong><br>
@@ -52,14 +54,15 @@ if (taskList) {   //checkd for list
 }
 
 //deleting a task
-function deleteTask(index) {  //index of task to remove
+function deleteTask(index) {
+  //index of task to remove
   tasks.splice(index, 1); //removes one index in the arry
   localStorage.setItem("tasks", JSON.stringify(tasks)); //the storage is then updated
   location.reload(); //list in dislpayed is then updated
 }
 
 //displaying the total tasks available
-const total = document.getElementById("totalTasks"); 
+const total = document.getElementById("totalTasks");
 
 if (total) {
   document.getElementById("totalTasks").textContent = tasks.length; //Counts all tasks

@@ -39,7 +39,7 @@ nav a:hover {
   text-decoration: underline;
 }
 main {
-    flex: 1;
+  flex: 1;
 }
 section {
   background-color: antiquewhite;
