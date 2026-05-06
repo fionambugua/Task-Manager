@@ -1,4 +1,5 @@
 body {
+  background-image: url("./pink\ aura\ wallpaper.jpg");
   color: rgb(180, 95, 95);
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
-  background-color: #4caf50;
+  background-color: rgb(82, 82, 172);
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 24px 0;
@@ -17,6 +18,7 @@ header {
 header h1 {
   font-size: 50px;
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
   /* background-color: #343a40; */
@@ -54,7 +56,7 @@ ul li {
 }
 ul button {
   color: white;
-  background-color: #007bff;
+  background-color: rgb(182, 75, 93);
   font-size: 18px;
   font-weight: 600;
   border: none;
@@ -63,10 +65,13 @@ ul button {
   border-radius: 30px;
 }
 ul button:hover {
-  background-color: #0056b3;
+  background-color: #0462c7;
 }
 ul button:active {
   background-color: #004085;
+}
+li {
+  background-color: rgb(250, 231, 205);
 }
 form {
   max-width: 650px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Add Task</title>
   </head>
   <body>
@@ -20,10 +20,16 @@
       <h2>Add New Task</h2>
 
       <form id="taskForm">
-        <label for="Task">Task</label><br><br>
-        <input type="text" id="title" placeholder="Task title" required /><br><br>
-        <textarea id="description" placeholder="Task description"></textarea><br><br>
-        <button  type="submit" id="add-task">Add Task</button>
+        <label for="Task">Task</label><br /><br />
+        <input
+          type="text"
+          id="title"
+          placeholder="Task title"
+          required
+        /><br /><br />
+        <textarea id="description" placeholder="Task description" required></textarea
+        ><br /><br />
+        <button type="submit" id="add-task">Add Task</button>
       </form>
     </main>
     <script src="./code.js" defer></script>
